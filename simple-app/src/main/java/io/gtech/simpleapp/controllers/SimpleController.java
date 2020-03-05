@@ -14,12 +14,14 @@ public class SimpleController {
   @RequestMapping(method = {RequestMethod.GET}, value = {"/hello"})
   public String sayHello() {
     LOGGER.info("Saying Hello");
+    System.out.println("Saying Hello");
     return "Hello World!";
   }
   
   @RequestMapping(method = {RequestMethod.GET}, value = {"/whatsup/{user}"})
   public String whatsup(@PathVariable String user) {
     LOGGER.info("Whats up " + user + "!!!");
+    System.out.println("Whats up " + user + "!!!");
     return "Whats up " + user + "!!!";
   }
 }

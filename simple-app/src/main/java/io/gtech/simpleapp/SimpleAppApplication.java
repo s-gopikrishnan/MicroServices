@@ -14,5 +14,6 @@ public class SimpleAppApplication {
     LOGGER.info("/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/");
     LOGGER.info("Started Simple app");
     LOGGER.info("/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/");
+    System.out.println("Started Simple app");
   }
 }
