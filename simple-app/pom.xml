@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>io.gtech</groupId>
 	<artifactId>simple-app</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>simple-app</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -55,5 +55,22 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	 <repositories>
+        <repository>
+            <id>myMavenRepo</id>
+            <url>https://mymavenrepo.com/repo/dPKt3Xo040uVQRBDrkLq/</url>
+        </repository>
+    </repositories>
+	 <distributionManagement>
+        <repository>
+            <id>myMavenRepo</id>
+            <url>https://mymavenrepo.com/repo/zS7jTXHjI16qgK8NV9Kx/</url>
+        </repository>
+        <snapshotRepository>
+            <id>myMavenRepo</id>
+            <url>https://mymavenrepo.com/repo/zS7jTXHjI16qgK8NV9Kx/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
