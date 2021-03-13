@@ -1,0 +1,19 @@
+spring.profiles.active: local
+
+server.port: 8090
+management.endpoint.health.show-details: always
+info.app:
+  name: Simple MicroServices APP
+  type: SpringBoot
+
+app.customProperty: local
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+    io.gtech.simpleapp: DEBUG
+  file:
+    name: logs/simple-app.log
+    max-size: 5MB
+    max-history: 20

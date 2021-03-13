@@ -1,6 +1,5 @@
-FROM ubuntu
-RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt-get install -y default-jdk
-COPY  simple-app.jar /opt/simple-app.jar
-ENTRYPOINT java -jar /opt/simple-app.jar --host=0.0.0.0
+FROM openjdk:8-jdk-alpine
+VOLUME /tmp
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["sh", "-c", "java ${JAVA_OPTS} -jar /app.jar ${0} ${@}"]
